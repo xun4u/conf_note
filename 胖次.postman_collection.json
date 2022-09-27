@@ -1,0 +1,6457 @@
+{
+	"info": {
+		"_postman_id": "150e45a1-8c2c-4314-ba1c-0e1fa06bffa5",
+		"name": "胖次",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "充值",
+					"item": [
+						{
+							"name": "充值vip列表",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/vipList",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"vipList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "充值记录",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/payRecord",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"payRecord"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "充值记录-金币",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/payRecordCoin",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"payRecordCoin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "支付选择",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "obj_id",
+											"value": "9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/payIndex",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"payIndex"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "支付选择-金币",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "coin_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/payIndexCoin",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"payIndexCoin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "发起支付",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "obj_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "11",
+											"type": "text"
+										},
+										{
+											"key": "money",
+											"value": "50",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "1npcszilav8g9kw0",
+											"type": "text"
+										},
+										{
+											"key": "device_type",
+											"value": "android",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/createPayOrder",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"createPayOrder"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "发起支付-金币",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "coin_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "money",
+											"value": "50",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "1npcszilav8g9kw0",
+											"type": "text"
+										},
+										{
+											"key": "device_type",
+											"value": "android",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/createPayOrderCoin",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"createPayOrderCoin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "39b1014e565f96e219d718407254f8b2",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/withdrawInfo",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawInfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现信息-邀请",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/withdrawInviteInfo",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawInviteInfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现记录",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/withdrawRecord?page=5",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawRecord"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现记录-邀请",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/withdrawInviteRecord",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawInviteRecord"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现申请",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "张三",
+											"type": "text"
+										},
+										{
+											"key": "bank_name",
+											"value": "长沙支行",
+											"type": "text"
+										},
+										{
+											"key": "bank_no",
+											"value": "5556",
+											"type": "text"
+										},
+										{
+											"key": "money",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/withdrawApply",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawApply"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现申请 -邀请",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "contact",
+											"value": "tg：张三111",
+											"type": "text"
+										},
+										{
+											"key": "account_type",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "account",
+											"value": "5556",
+											"type": "text"
+										},
+										{
+											"key": "money",
+											"value": "19",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/withdrawInviteApply",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"withdrawInviteApply"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "上传凭证",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "order_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "e_img",
+											"value": "aaaaaa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/pay/payCertificate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"payCertificate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "兑换vip",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "PAUQZNPB8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/pay/exchangeVip",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"pay",
+										"exchangeVip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "回调测试 Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "code",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "mercId",
+											"value": "11150",
+											"type": "text"
+										},
+										{
+											"key": "oid",
+											"value": "NNSY12251921574649673611",
+											"type": "text"
+										},
+										{
+											"key": "payMoney",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "payTime",
+											"value": "2022-03-03T11:24:00.766Z",
+											"type": "text"
+										},
+										{
+											"key": "tradeNo",
+											"value": "2203054701000181980697",
+											"type": "text"
+										},
+										{
+											"key": "sign",
+											"value": "47b3b73785c55d2789c6f7053a7a77cd",
+											"type": "text"
+										},
+										{
+											"key": "payload",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://api.gazzg.com/api/payNotify",
+									"protocol": "http",
+									"host": [
+										"api",
+										"gazzg",
+										"com"
+									],
+									"path": [
+										"api",
+										"payNotify"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "回调测试-center",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "app_code",
+											"value": "16925966",
+											"type": "text"
+										},
+										{
+											"key": "center_order_no",
+											"value": "semao_220328470116925966444605",
+											"type": "text"
+										},
+										{
+											"key": "app_order_no",
+											"value": "2203284701041049289997",
+											"type": "text"
+										},
+										{
+											"key": "pay_money",
+											"value": "30",
+											"type": "text"
+										},
+										{
+											"key": "fee_rate_amount",
+											"value": "5.5",
+											"type": "text"
+										},
+										{
+											"key": "pay_time",
+											"value": "2022-03-28 03:07:50",
+											"type": "text"
+										},
+										{
+											"key": "pay_state",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "sign",
+											"value": "f40cec1df4850ef6d89e8c090749da41",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/payNotify",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"payNotify"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "用户",
+					"item": [
+						{
+							"name": "登陆",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let res = JSON.parse(responseBody)",
+											"",
+											"console.log(res)",
+											"",
+											"if(responseCode.code == 200 && res.code === 0) {",
+											"    let token = res.data.token;",
+											"    pm.environment.set(\"pants_api_token\", token);",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "app_version",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "07295",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "invite_code",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pwd",
+											"value": "b3e816eb0fac09405351b5608d5d8745",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/user/login",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改头像",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "avatar",
+											"value": "44443",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/user/editAvatar",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"editAvatar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改昵称",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nickname",
+											"value": "666",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/user/editNickname",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"editNickname"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "扫描切换账户",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "19307",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "bd81bd0ffcdafc2b30598e41e1d52ead",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/switchUser",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"switchUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "账号密码登陆",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login_uname",
+											"value": "aaaaa",
+											"type": "text"
+										},
+										{
+											"key": "login_pwd",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/loginByAccount",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"loginByAccount"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "短信登陆",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "phone",
+											"value": "13512345678",
+											"type": "text"
+										},
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/loginBySms",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"loginBySms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取用户信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "39b1014e565f96e219d718407254f8b2",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/user/info",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "用户激活",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/active",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"active"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "绑定邀请码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "invite_code",
+											"value": "8AHBGMXX",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/bindInvite",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"bindInvite"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "绑定登陆账号和密码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login_uname",
+											"value": "aaaaa",
+											"type": "text"
+										},
+										{
+											"key": "login_pwd",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/bindLoginAccount",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"bindLoginAccount"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改密码-旧密码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login_pwd",
+											"value": "admin123",
+											"type": "text"
+										},
+										{
+											"key": "login_pwd_old",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/updateLoginPwdByOld",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"updateLoginPwdByOld"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改密码-绑定手机",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/updateLoginPwdBySms",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"updateLoginPwdBySms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "发送短信",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "phone",
+											"value": "13512345679",
+											"type": "text"
+										},
+										{
+											"key": "sms_type",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/sendSms",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"sendSms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "绑定手机",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "1111",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/bindPhone",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"bindPhone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "分享邀请",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/shareInvite",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"shareInvite"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "客服问题",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sms_code",
+											"value": "8888",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/questionList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"questionList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "客服问题答案",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/user/questionAnswer",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"questionAnswer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "首页",
+					"item": [
+						{
+							"name": "视频",
+							"item": [
+								{
+									"name": "猜你喜欢",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "class_id",
+													"value": "24",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/mayLike",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"mayLike"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "热门影片-更多",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "class_id",
+													"value": "24",
+													"type": "text"
+												},
+												{
+													"key": "tab_id",
+													"value": "0",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/hotVideos",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"hotVideos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "最近更新-更多",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "class_id",
+													"value": "16",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/newVideos",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"newVideos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "视频详情",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id",
+													"value": "203",
+													"type": "text"
+												},
+												{
+													"key": "data_type",
+													"value": "3",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/detail",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"detail"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "播放反馈",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pd_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "video_id",
+													"value": "607",
+													"type": "text"
+												},
+												{
+													"key": "play_url",
+													"value": "asdadadadsa",
+													"type": "text"
+												},
+												{
+													"key": "content",
+													"value": "B:xxxxxxx",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{panda_api}}/api/video/errorFeedback",
+											"host": [
+												"{{panda_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"errorFeedback"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "猜你喜欢-详情",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "video_id",
+													"value": "622",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/detailMayLike",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"detailMayLike"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "获取播放链接",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pd_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id",
+													"value": "1",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{panda_api}}/api/video/getPlayUrl",
+											"host": [
+												"{{panda_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"getPlayUrl"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "动漫视频",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "class_id",
+													"value": "13",
+													"type": "text"
+												},
+												{
+													"key": "is_group",
+													"value": "0",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/comicVideosList",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"comicVideosList"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "动漫最新番剧",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "token",
+												"value": "{{pants_api_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{pants_api}}/api/video/newGroupVideos?page=1",
+											"host": [
+												"{{pants_api}}"
+											],
+											"path": [
+												"api",
+												"video",
+												"newGroupVideos"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "首页聚合",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "navigate_class",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "object_id",
+											"value": "7",
+											"type": "text"
+										},
+										{
+											"key": "app_version",
+											"value": "1.0",
+											"type": "text"
+										},
+										{
+											"key": "navigate_id",
+											"value": "18",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/index?page=1",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"index"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "通知",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/news/noticeList",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"news",
+										"noticeList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看标签",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/recommendTags",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"recommendTags"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看标签数据",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tag_id",
+											"value": "736",
+											"type": "text"
+										},
+										{
+											"key": "data_type",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/recommendTagList",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"recommendTagList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "收藏/取藏",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "vid",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "data_type",
+											"value": "4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/collect",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"collect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "收藏列表",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "data_type",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/userCollectList",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"userCollectList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "data_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "kw",
+											"value": "貞德",
+											"type": "text"
+										},
+										{
+											"key": "tab",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/search",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索热词",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/hotSearch",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"hotSearch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "容器更多",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "data_type",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "container_id",
+											"value": "83",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/containerMore",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"containerMore"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取ios激活码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/index/getIosCode",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"getIosCode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "检查ios激活码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ios_code",
+											"value": "meb7xvghh4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/index/checkIosCode",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"checkIosCode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "活跃用户统计",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/index/activeUser",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"activeUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "容器数据-更多",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "module_id",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "is_long",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/video/containerMore",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"video",
+										"containerMore"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "金刚导航视频",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "key",
+											"value": "must",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/video/girdNavVideos",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"video",
+										"girdNavVideos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "我的收藏-视频",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "class_id",
+											"value": "16",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/video/collectVideos",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"video",
+										"collectVideos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "视频分享",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/video/sharePv",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"video",
+										"sharePv"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "初始化加载",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "app_version",
+											"value": "1.5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/first",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"first"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "上传图片",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "img",
+											"type": "file",
+											"src": "/Users/mac/Downloads/组 5009.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/index/uploadImg",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"index",
+										"uploadImg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "收藏",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "870",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/video/collect",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"video",
+										"collect"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "漫画",
+					"item": [
+						{
+							"name": "漫画首页",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "class_ids",
+											"value": "1,57",
+											"type": "text"
+										},
+										{
+											"key": "data_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "tab",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/comic/index",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"comic",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "漫画目录",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "20324",
+											"type": "text"
+										},
+										{
+											"key": "order",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/comic/comicCatalog?page=1",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"comic",
+										"comicCatalog"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "漫画单集",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3439",
+											"type": "text"
+										},
+										{
+											"key": "part_num",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/comic/comicDetail",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"comic",
+										"comicDetail"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "约会",
+					"item": [
+						{
+							"name": "公告信息",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "app_version",
+											"value": "2.3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/dating/info",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "type列表",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/dating/list?page=1",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "收藏type",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "city_code",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/dating/userCollections",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"userCollections"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "眼缘列表",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "city_id",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/dating/recommend",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"recommend"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "约会详情",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pd_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "55",
+											"type": "text"
+										},
+										{
+											"key": "city_code",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/api/dating/detail",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"detail"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "收藏/取藏",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{pants_api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/api/dating/collection",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"api",
+										"dating",
+										"collection"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "后台",
+			"item": [
+				{
+					"name": "管理员",
+					"item": [
+						{
+							"name": "创建管理员",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "cfm_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "admin2",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/admin/create",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"admin",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "登陆",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"let res = JSON.parse(responseBody)",
+											"",
+											"console.log(res)",
+											"",
+											"if(responseCode.code == 200 && res.code === 0) {",
+											"    let token = res.data.token;",
+											"    pm.environment.set(\"pants_back_token\", token);",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai2",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "02326",
+											"type": "text"
+										},
+										{
+											"key": "key",
+											"value": "7f45008e-7dc1-24bb-97f5-e074f69e1724",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{pants_api}}/back/admin/login",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"back",
+										"admin",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "登出",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/admin/logout",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "删除管理员",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/admin/del",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"del"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "重置密码",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/admin/resetPwd",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"resetPwd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "管理员更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "aaaa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/admin/update",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "管理员开关",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/admin/userStateSwitch",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"userStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "管理员列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pants_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{pants_api}}/back/admin/list?per_page=5&username=l",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"back",
+										"admin",
+										"list"
+									],
+									"query": [
+										{
+											"key": "per_page",
+											"value": "5"
+										},
+										{
+											"key": "username",
+											"value": "l"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "管理员信息",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{rs_api}}/admin/info?id=1",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"admin",
+										"info"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "权限",
+					"item": [
+						{
+							"name": "创建角色",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_name",
+											"value": "超级管理员",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleAdd",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleAdd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "角色开关",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleStateSwitch",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "角色分配权限",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "menu_ids",
+											"value": "1,2,3,4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/assignMenuToRole",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"assignMenuToRole"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "创建菜单节点",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pid",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "首页",
+											"type": "text"
+										},
+										{
+											"key": "icon",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "href",
+											"value": "page/index.html",
+											"type": "text"
+										},
+										{
+											"key": "target",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "permission",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/menuAdd",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"menuAdd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "编辑创建菜单节点",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "menu_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "全部bbb",
+											"type": "text"
+										},
+										{
+											"key": "icon",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "href",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "target",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "permission",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/menuUpdate",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"menuUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取菜单详情",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/getMenuInfo?menu_id=2",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"getMenuInfo"
+									],
+									"query": [
+										{
+											"key": "menu_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "拥有的权限树",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleMenu?role_id=1",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleMenu"
+									],
+									"query": [
+										{
+											"key": "role_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "角色列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/getRoleList",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"getRoleList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "左侧菜单树",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/menuAuth",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"menuAuth"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "菜单树下拉",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/getMenuSelect",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"getMenuSelect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "菜单列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/getMenuList",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"getMenuList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "角色下拉",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleSelect",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleSelect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "删除角色",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleDel",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleDel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "删除菜单",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "menu_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/menuDel",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"menuDel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "更新角色",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "role_name",
+											"value": "aaaaa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{rs_api}}/permission/roleUpdate",
+									"host": [
+										"{{rs_api}}"
+									],
+									"path": [
+										"permission",
+										"roleUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "清除角色缓存接口",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role_id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "role_name",
+											"value": "aaaaa",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/permission/clearAllRoleCache",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"permission",
+										"clearAllRoleCache"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "用户",
+					"item": [
+						{
+							"name": "用户列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pants_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{pants_api}}/back/user/list",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"back",
+										"user",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "用户删除",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/user/del",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"user",
+										"del"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "状态切换",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/user/userStateSwitch",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"user",
+										"userStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "邀请赠送流水",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/user/inviteRecord",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"user",
+										"inviteRecord"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "财务",
+					"item": [
+						{
+							"name": "vip流水",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/finance/vipRecord",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"vipRecord"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "充值流水",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/finance/payOrderList?t_start&t_end&order_no&pay_type&pay_state&e_state",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"payOrderList"
+									],
+									"query": [
+										{
+											"key": "t_start",
+											"value": null
+										},
+										{
+											"key": "t_end",
+											"value": null
+										},
+										{
+											"key": "order_no",
+											"value": null
+										},
+										{
+											"key": "pay_type",
+											"value": null
+										},
+										{
+											"key": "pay_state",
+											"value": null
+										},
+										{
+											"key": "e_state",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "每日充值汇总",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/finance/payDayList?t_start&t_end",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"payDayList"
+									],
+									"query": [
+										{
+											"key": "t_start",
+											"value": null
+										},
+										{
+											"key": "t_end",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现列表-未审核",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawApplyList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawApplyList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "提现列表-已审核",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawCheckedList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawCheckedList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "批量审核",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ids",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawCheck",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawCheck"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "打款成功",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawSuccess",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawSuccess"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "审核失败",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawCheckFail",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawCheckFail"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "打款失败",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/finance/withdrawError",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"withdrawError"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "补单vip",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "order_id",
+											"value": "1005",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/finance/PayErrorGiveVip",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"finance",
+										"PayErrorGiveVip"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "视频",
+					"item": [
+						{
+							"name": "拉取视频",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "cfm_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "admin2",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/pullVideos",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"pullVideos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "批量上架",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ids",
+											"value": "1,2,3",
+											"type": "text"
+										},
+										{
+											"key": "rack_start",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "rack_end",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/rackVideos",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"rackVideos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "淫民日报新增",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "第一期：xxxx",
+											"type": "text"
+										},
+										{
+											"key": "intro",
+											"value": "今天是个好日子",
+											"type": "text"
+										},
+										{
+											"key": "cover_img",
+											"value": "xxxxxx",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "<h1>今天是个好日子</h1>",
+											"type": "text"
+										},
+										{
+											"key": "content_type",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "target_url",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "rack_time",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyCreate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyCreate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看头条新增",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "女优胸围比赛",
+											"type": "text"
+										},
+										{
+											"key": "intro",
+											"value": "今天是个好日子",
+											"type": "text"
+										},
+										{
+											"key": "cover_img",
+											"value": "xxxxxx",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "<h1>今天是个好日子</h1>",
+											"type": "text"
+										},
+										{
+											"key": "content_type",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "target_url",
+											"value": "baidu.com",
+											"type": "text"
+										},
+										{
+											"key": "rack_time",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/headlineCreate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"headlineCreate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "淫民日报更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "第8期：xxxx",
+											"type": "text"
+										},
+										{
+											"key": "intro",
+											"value": "今天是个好日子",
+											"type": "text"
+										},
+										{
+											"key": "cover_img",
+											"value": "xxxxxx",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "<h1>今天是个好日子</h1>",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "content_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "target_url",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyUpdate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看头条更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "有容乃大",
+											"type": "text"
+										},
+										{
+											"key": "intro",
+											"value": "今天是个好日子",
+											"type": "text"
+										},
+										{
+											"key": "cover_img",
+											"value": "xxxxxx",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "<h1>今天是个好日子</h1>",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "content_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "target_url",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/headLineUpdate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"headLineUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "淫民日报删除",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyDel",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyDel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看头条删除",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/headLineDel",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"headLineDel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "淫民日报切换状态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyStateSwitch",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "必看头条切换状态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/headLineStateSwitch",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"headLineStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "批量预上架",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ids",
+											"value": "4,5",
+											"type": "text"
+										},
+										{
+											"key": "pre_rack_start",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "pre_rack_end",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/preRackVideos",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"preRackVideos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "视频列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pants_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{pants_api}}/back/resource/videoList?page=5",
+									"host": [
+										"{{pants_api}}"
+									],
+									"path": [
+										"back",
+										"resource",
+										"videoList"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "te",
+											"disabled": true
+										},
+										{
+											"key": "video_id",
+											"value": "360",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "搜索热门词",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "cfm_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "admin2",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/ResourceClass/searchHotList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"ResourceClass",
+										"searchHotList"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "te",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "熊猫日记列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "cfm_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "admin2",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/videoShortList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"videoShortList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "18禁列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "likai",
+											"type": "text"
+										},
+										{
+											"key": "pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "cfm_pwd",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "nickname",
+											"value": "admin2",
+											"type": "text"
+										},
+										{
+											"key": "role_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/videoShowList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"videoShowList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "人民日报列表",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "人民日报详情",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/resource/dailyInfo?id=1",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"resource",
+										"dailyInfo"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "布局",
+					"item": [
+						{
+							"name": "首页布局展示",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token_rs}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/index/appIndexConf",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"appIndexConf"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "金刚区导航列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/index/indexGridList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"indexGridList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "创建容器",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "subtitle",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/createLayout",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"createLayout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "金刚导航新增",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "导航1",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"value": "xxxxx",
+											"type": "text"
+										},
+										{
+											"key": "jump_url",
+											"value": "http://www.baidu.com",
+											"type": "text"
+										},
+										{
+											"key": "jump_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/indexGridAdd",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"indexGridAdd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "金刚导航更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "入坑必看",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"value": "xxxxx",
+											"type": "text"
+										},
+										{
+											"key": "jump_url",
+											"value": "http://www.baidu.com",
+											"type": "text"
+										},
+										{
+											"key": "jump_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/indexGridUpdate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"indexGridUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "金刚导航状态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/indexGridState",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"indexGridState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "更新容器",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "33333",
+											"type": "text"
+										},
+										{
+											"key": "subtitle",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "conf_id",
+											"value": "9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/updateLayout",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"updateLayout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "容器状态切换",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "conf_id",
+											"value": "13",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/index/layoutStateSwitch",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"layoutStateSwitch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "推荐布局列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/index/getRecommendConfList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"index",
+										"getRecommendConfList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "约会",
+					"item": [
+						{
+							"name": "约会信息列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/dating/getList?state&t_start&t_end&type&city_name=天津",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"dating",
+										"getList"
+									],
+									"query": [
+										{
+											"key": "state",
+											"value": null
+										},
+										{
+											"key": "t_start",
+											"value": null
+										},
+										{
+											"key": "t_end",
+											"value": null
+										},
+										{
+											"key": "type",
+											"value": null
+										},
+										{
+											"key": "city_name",
+											"value": "天津"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "获取详情",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/dating/getDetail?id=3",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"dating",
+										"getDetail"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "作品包",
+					"item": [
+						{
+							"name": "小说包列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/pack/novelList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"novelList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "svip列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/svip/index",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"index"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "游戏列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/svip/gameList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"gameList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "板块列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/svip/moduleList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"moduleList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "写真包列表",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/pack/photoList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"photoList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "动漫包",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/pack/cartoonList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"cartoonList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "视频包",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/pack/videoList",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"videoList"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "包选择下拉",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{panda_api}}/pack/getPackSelect?type=2",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"getPackSelect"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "创建包",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "写真-4月精选",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "coin",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "unit_coin",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/pack/create",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "更新包",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "视频-麻豆精品",
+											"type": "text"
+										},
+										{
+											"key": "coin",
+											"value": "1500",
+											"type": "text"
+										},
+										{
+											"key": "unit_coin",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/pack/update",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "拉取漫画",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/cartoon/pull",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"cartoon",
+										"pull"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "游戏更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "11",
+											"type": "text"
+										},
+										{
+											"key": "jump_url",
+											"value": "https://www.google.com",
+											"type": "text"
+										},
+										{
+											"key": "jump_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/gameUpdate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"gameUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "游戏创建",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "image",
+											"value": "33",
+											"type": "text"
+										},
+										{
+											"key": "jump_url",
+											"value": "https://www.google.com",
+											"type": "text"
+										},
+										{
+											"key": "jump_type",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/gameCreate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"gameCreate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "板块更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "event_jump",
+											"value": "xxx",
+											"type": "text"
+										},
+										{
+											"key": "sort",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "num",
+											"value": "4",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/moduleUpdate",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"moduleUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "游戏状态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/gameState",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"gameState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "板块状态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/moduleState",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"moduleState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "特权更新",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "remark",
+											"value": "3333",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/svip/update",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"svip",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "上下架",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{panda_api}}/pack/checkState",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"pack",
+										"checkState"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "广场",
+					"item": [
+						{
+							"name": "拉取动态",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{pd_back_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{panda_api}}/square/pullMoment",
+									"host": [
+										"{{panda_api}}"
+									],
+									"path": [
+										"square",
+										"pullMoment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "上传图片",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_rs}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/mac/Desktop/番茄.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{panda_api}}/index/uploadImg",
+							"host": [
+								"{{panda_api}}"
+							],
+							"path": [
+								"index",
+								"uploadImg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "同步数据",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{pants_back_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{pants_api}}/back/ResourceClass/synch?data_type=10",
+							"host": [
+								"{{pants_api}}"
+							],
+							"path": [
+								"back",
+								"ResourceClass",
+								"synch"
+							],
+							"query": [
+								{
+									"key": "data_type",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取验证码",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rs_api}}/index/code?key=7f45008e-7dc1-24bb-97f5-e074f69e1724",
+							"host": [
+								"{{rs_api}}"
+							],
+							"path": [
+								"index",
+								"code"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "7f45008e-7dc1-24bb-97f5-e074f69e1724"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "配置首页",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{panda_av}}/config/index",
+							"host": [
+								"{{panda_av}}"
+							],
+							"path": [
+								"config",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "折扣人员列表",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{pd_back_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{panda_api}}/activity/discountList",
+							"host": [
+								"{{panda_api}}"
+							],
+							"path": [
+								"activity",
+								"discountList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "更新布局字段",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_rs}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "conf_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "333",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{panda_api}}/index/indexConfUpdate",
+							"host": [
+								"{{panda_api}}"
+							],
+							"path": [
+								"index",
+								"indexConfUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "新建请求",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{panda_api}}/index/qingming?invite_code=8AHBU5U7",
+							"host": [
+								"{{panda_api}}"
+							],
+							"path": [
+								"index",
+								"qingming"
+							],
+							"query": [
+								{
+									"key": "invite_code",
+									"value": "8AHBU5U7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "测试 Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{debug}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "token",
+						"value": "{{pd_api_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://pants.cc/test/test",
+					"protocol": "http",
+					"host": [
+						"pants",
+						"cc"
+					],
+					"path": [
+						"test",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
